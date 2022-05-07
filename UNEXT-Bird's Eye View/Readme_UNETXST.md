@@ -9,6 +9,8 @@ IPM assumes the world to be flat. Any three-dimensional object and changing road
  
  ### The Model ###
 UNETXST is a methodology to obtain BEV images that are not subject to the errors introduced by the flatness-assumption underlying IPM. Instead of trying to make simulated images look more realistic, we remove mostly unnecessary texture from real-world data by computing semantically segmented camera images. We show how their use as input to our algorithm allows us to train a neural network on synthetic data only, while still being able to successfully perform the desired task on real-world data. With semantically segmented input, the algorithm has access to class information and is thus able to incorporate these into the correction of images produced by IPM. The output is a semantically segmented BEV of the input scene. Since the object shapes are preserved, the output can not only be used for determining free space but also to locate dynamic objects. In addition, the semantically segmented BEV images contain a color-coding for unknown areas, which are occluded in the original camera image. The _uNetXST_ model achieves the highest MIoU score on the validation set as it benefits from being able to extract features from the non-transformed camera images, before perspective errors are introduced by IPM.
+### Architecture###
+<img src="../images_architecture/unist.jpg" width="500" height="600">
 
 ### Dataset ###
 

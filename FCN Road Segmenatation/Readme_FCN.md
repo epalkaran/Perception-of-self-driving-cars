@@ -14,6 +14,9 @@ i.e. when an image is input to an FCN module it will output the segmentation it 
 For FCN we need a backbone network which is a image classification network called VGG Network. It is composed of a number of convolutional blocks which are placed sequentially ot each other.Each block consists of two convolutional layers followed by a max pooling layer. We extract the output of last three convolutional blocks called **POOL3,POOL4,POOL5** .
 We upsample POOL5 by 2x and add it to the output of POOL4.The result is then upsampled 2x and added to the output of POOL3. The result is finally upsampled 8 times.This final output is the segmentation mask.This is the FCN-8 architecture.This architecture allows for identifying finer structures in the image
 
+### Architecture ###
+<img src="../images_architecture/FCN.jpg" width="500" height="600">
+
 ### Dataset ###
 
 The dataset used to train our model is [KITTI Road Dataset](http://www.cvlibs.net/datasets/kitti/)

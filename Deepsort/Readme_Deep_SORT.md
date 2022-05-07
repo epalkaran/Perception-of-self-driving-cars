@@ -13,6 +13,9 @@ It consists of the following steps:
 4.Cascade Matching and IoU(Intersection over Union) Matching:
 Helps in identifying the position of a vehicle in every frame via an algorithm called the Hungarian Algorithm.
 
+### Architecture ###
+<img src="../images_architecture/DeepSort.jpg" width="500" height="600">
+
 ### Dataset ###
 
 [KITTI road segmentation dataset](https://www.kaggle.com/datasets/sakshaymahna/kittiroadsegmentation)

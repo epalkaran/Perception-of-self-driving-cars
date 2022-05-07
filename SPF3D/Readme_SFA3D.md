@@ -13,6 +13,9 @@ of each scale. The finally scale-space score map Sscore is obtained by linear we
 - _L1 Loss_ : L1 Loss function stands for Least Absolute Deviations. Also known as LAD. L1 Loss Function is used to minimize the error which is the sum of the all the absolute differences between the true value and the predicted value.
 3. **Learning Rate Scheduling Technique** : Learning rate decay is a technique for training modern neural networks. It starts training the network with a large learning rate and then slowly reducing/decaying it until local minima is obtained. It is empirically observed to help both optimization and generalization.
 
+### Architecture ###
+<img src="../images_architecture/SPF3D.jpg" width="500" height="600">
+
 ### Dataset ###
 
 [KITTI 3D Object Detection Dataset](https://www.kaggle.com/datasets/garymk/kitti-3d-object-detection-dataset)
